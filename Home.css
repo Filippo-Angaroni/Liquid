@@ -105,9 +105,11 @@ h1, h2, h3, h4, h5, h6, a{
 
 .previous-slide{
     background: url("Stuff/angle-left.png");
+    background-size: cover;
     object-fit: fill;
     background-repeat: no-repeat;
     z-index: 2;
+    background-color: red;
 }
 
 .next-slide{
