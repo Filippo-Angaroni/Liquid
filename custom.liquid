@@ -1,0 +1,45 @@
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+
+
+<body style="overflow: auto; height: 1000px;">
+     
+    <div style="display: inline-block; position: absolute; top:0; left:0;">
+        <img  src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012" style="width: 100vw; height:auto;">
+        
+    </div>
+    
+    <div class="header-div">
+
+        <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041" style="width: 10vw; height: auto; object-fit: contain;">
+
+        <div class="centered-div" style="width: 100%">
+            <a class="hyperlink-header" href="www.google.com">Education</a>
+            <a class="hyperlink-header" href="www.google.com">Consulting</a>
+            <a class="hyperlink-header" href="www.google.com">Distribution</a>
+        </div> 
+    </div>
+
+    <div class="header-div">
+        <h1>tre</h1>
+    </div>
+    
+</body>
+
+
+{% schema %}
+  {
+    "name": "Custom home",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom home"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

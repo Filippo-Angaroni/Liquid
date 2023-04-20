@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Home.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="Home.js" type="text/javascript"> -->
+    <title>Document</title>
+</head>
+<body style="overflow-x: hidden; margin: 0px;">
+     
+    <!-- <div class="full-screen-16-9-image">
+        <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Home_image.png?v=1681978611">
+
+    </div> -->
+
+    <!--SLIDE SHOW-->
+    <div class="home-slideshow">
+        <div class="change-slide-button-hover-left">
+            <button class="previous-slide" onclick="LeftSlide()"></button>
+        </div>
+        <div class="change-slide-button-hover-right">
+            <button class="next-slide" onclick="RightSlide()"></button>
+        </div>
+        <div id="ImagesSlideContainer" class="home-slideshow-slide" style="width: 100%; height: 100%;">
+            <img class="image-slide" id="ImageSlide1" src="Stuff/Education.png">
+            <img class="image-slide" id="ImageSlide2" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/foresta_e_vigna_rework_copia.jpg?v=1622213063">
+        </div>
+    </div>
+    
+ 
+    <div class="header-div">
+
+        <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041">
+
+        <div class="centered-div">
+            <a class="hyperlink-header" href="www.google.com">Education</a>
+            <a class="hyperlink-header" href="www.google.com">Consulting</a>
+            <a class="hyperlink-header" href="www.google.com">Distribution</a>
+        </div> 
+    </div>
+
+    <div class="home-image-content" id="HomeimageContent">
+        <div class="home-image-text-container" id="HomeImageTextContainer">
+            <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
+            <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw;"></h3>
+            <a id="HomeImageButton" href="https://www.tucciateliergastronomico.it/pages/dsitribution" class="button-home-text-container"></a>
+        </div> 
+    </div>
+
+    <div style="position: absolute; margin-top: 25vw;">
+        <h1 style="font-size: 2.5vw; margin-left: 15vw; color: #F9B233; padding-bottom: 5vw;">Le nostre collezioni</h1>
+
+    </div>
+
+    <script  src="Home.js">
+        
+    </script>
+</body>
+</html>
