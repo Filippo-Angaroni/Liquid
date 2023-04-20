@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, a{
 
 .previous-slide{
     background: url("Stuff/angle-left.png");
-    background-size: cover;
+    object-fit: fill;
     background-repeat: no-repeat;
     z-index: 2;
 }
@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6, a{
 .next-slide{
     background: url("Stuff/angle-right.png");
     background-size: cover;
+    object-fit: fill;
     background-repeat: no-repeat;
     z-index: 2;
 }
