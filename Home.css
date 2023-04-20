@@ -14,12 +14,6 @@ h1, h2, h3, h4, h5, h6, a{
     text-decoration: none;      
 }
 
-.centered-div{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 .header-div{
     justify-items: stretch;
     margin-left: 5vw;
@@ -134,6 +128,7 @@ h1, h2, h3, h4, h5, h6, a{
     align-items: center;
     justify-content: center;
     display: flex;
+    background-color: rgba(240, 240, 240, .1);
 }
 
 .change-slide-button-hover-left{
@@ -149,4 +144,26 @@ h1, h2, h3, h4, h5, h6, a{
 
 .change-slide-button-hover-left:hover, .change-slide-button-hover-right:hover{
     background-color: rgba(240, 240, 240, .4);
+}
+
+.collecion-container{
+    width: 100vw;
+    align-items: top;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.letterhead-div{
+    position: relative; 
+    width: 100vw; 
+    display: flex;
+}
+
+.letterhead{
+    font-size: 2.5vw; 
+    color: #F9B233; 
+    padding-bottom: 2vw; 
+    width: 100%; 
+    text-align: center; 
 }
