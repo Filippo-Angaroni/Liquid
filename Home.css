@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, a{
     background-color: rgba(240, 240, 240, .4);
 }
 
-.collecion-container{
+.collection-container{
     width: 100vw;
     align-items: top;
     justify-content: center;
@@ -167,3 +167,42 @@ h1, h2, h3, h4, h5, h6, a{
     width: 100%; 
     text-align: center; 
 }
+
+.collection-container div{
+    height:25vw; 
+    position: relative; 
+    margin-top: 2vw; 
+    margin-bottom: 2vw;
+}
+
+
+
+.collection-card{
+    height: 100%; 
+    width: 25vw; 
+    margin-left: 4vw; 
+    margin-right: 4vw; 
+    border-radius: 1vw;
+    position: absolute;
+}
+
+.collection-card div{
+    background-color: #F9B233; 
+    height: 20%; 
+    width: 100%; 
+    border-bottom-left-radius: inherit; 
+    border-bottom-right-radius: inherit; 
+    position: absolute; 
+    margin: 0px;
+}
+
+.collection-card:hover{
+    cursor: pointer;
+    width: 27vw;
+    height: 108%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    filter: opacity(70%);
+    border-radius: 2vw;
+}
+
