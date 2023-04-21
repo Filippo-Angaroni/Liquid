@@ -23,7 +23,7 @@ const slidecontent = {
 //WINERIES COLLECTION OBJECT
 const wineries = {
     winery1 : {
-        name: "Molino di Rovellasca",
+        name: "Molino di Rovescala",
         src: "https://cdn.shopify.com/s/files/1/0566/5285/7533/collections/PEOPLE_-_MOLINO_DI_ROVESCALA_2.jpg?v=1679321091",
         link: "https://www.tucciateliergastronomico.it/collections/molino-di-rovescala"
     },
@@ -33,7 +33,7 @@ const wineries = {
         link: "https://www.tucciateliergastronomico.it/collections/sisters-run"
     },
     winery3 : {
-        name: "Il Podere alla Quercia",
+        name: "La Ceriola",
         src: "https://cdn.shopify.com/s/files/1/0566/5285/7533/collections/LaCeriola1482.jpg?v=1679500058",
         link: "https://www.tucciateliergastronomico.it/collections/il-podere-alla-quercia-la-ceriola"
     },
@@ -79,15 +79,22 @@ let currentindex = 1;
 let currentslide = document.getElementById("ImageSlide" + currentindex.toString());
 SetSlide(currentindex);
 
+
+let button_scroll_clicked = false;
+
 //SCROLL TO LEFT THE HOME SLIDE
 function LeftSlide(){
+    console.log(currentindex);
     if (currentindex - 1 <= 0){
         currentindex = slidecount;
     } else {
         currentindex -= 1;
     }
+    console.log(currentindex);
+
     currentslide.style.display = "none";
-    SetSlide(currentindex);    
+    clearInterval(intervalslideshow);
+    SetSlide(currentindex);
 }
 
 //SCROLL TO RIGHT THE HOME SLIDE
@@ -98,11 +105,13 @@ function RightSlide(){
         currentindex += 1;
     }
     currentslide.style.display = "none";
+    clearInterval(intervalslideshow);
     SetSlide(currentindex);
 }
 
 //SET SLIDE AFTER SCROLLING
 function SetSlide(slidenumber){
+    currentslide.style.display = "none";
     currentslide = document.getElementById("ImageSlide" + slidenumber.toString());
     currentslide.style.display = "block";
     currentslide.style.zIndex = -1;
@@ -127,5 +136,17 @@ function SetSlide(slidenumber){
         HomeImageDescription.style.color = rgb_light_description; 
         HomeImageButton.style.color = rgb_light_title;
     }
+
 }
+
+function ImageRotation(index){
+    if (index >= slidecount){
+        currentindex = 1;    
+    } else {
+        currentindex += 1;
+    }
+    
+}
+
+let intervalslideshow = setInterval(function() {ImageRotation(currentindex);  SetSlide(currentindex);}, 5000);
 
