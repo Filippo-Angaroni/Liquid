@@ -60,6 +60,7 @@ const wineries = {
 
 }
 
+//PLACE CARD COLLECTION
 function PlaceCardCollectionContent(){
     let cardnumber = 1;
     for (const _winery in wineries){
@@ -109,12 +110,49 @@ function RightSlide(){
     SetSlide(currentindex);
 }
 
+//SCOMPARSION
+/**
+ * 
+ * @param {HTMLImageElement} slide 
+ */
+function HomeImageFadingIn(slide){
+    var opacity = 10;
+    var timer = setInterval(function(){
+        if (opacity >= 100){
+            clearInterval(timer);
+        }
+        slide.style.opacity = opacity;
+        slide.style.filter = "alpha(opacity=" + opacity*100 + ")";
+        opacity += opacity*0.1;
+    }, 10);
+}
+
+//COMPARSION
+/**
+ * 
+ * @param {HTMLImageElement} slide 
+ */
+function HomeImageFadingOut(slide){
+    var opacity = 100;
+    var timer = setInterval(function(){
+        if (opacity <= 0.1){
+            clearInterval(timer);
+            
+        } 
+        slide.style.opacity = opacity;
+        slide.style.filter = "alpha(opacity=" + opacity*100 + ")";
+        opacity -= opacity*0.1;
+    }, 10);
+}
+
 //SET SLIDE AFTER SCROLLING
 function SetSlide(slidenumber){
     currentslide.style.display = "none";
+
     currentslide = document.getElementById("ImageSlide" + slidenumber.toString());
+    // HomeImageFadingIn(currentslide)
+    // setTimeout(function(){HomeImageFadingOut(currentslide)}, 4500);
     currentslide.style.display = "block";
-    currentslide.style.zIndex = -1;
     let HomeImageTitle = document.getElementById("HomeImageTitle");
     let HomeImageDescription = document.getElementById("HomeImageDescription");
     let HomeImageButton = document.getElementById("HomeImageButton");
@@ -139,6 +177,7 @@ function SetSlide(slidenumber){
 
 }
 
+//IMAGE SEQUENCE
 function ImageRotation(index){
     if (index >= slidecount){
         currentindex = 1;    
