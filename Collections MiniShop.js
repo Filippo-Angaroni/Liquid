@@ -1,88 +1,132 @@
 const wines = {
     molino_di_rovescala : {
         wine1 : {
-            src: "Collections/Molino di Rovescala/pinot_nero_rose.png"
+            src: "Collections/Molino di Rovescala/pinot_nero_rose.png",
+            text: "Pinot Nero Rosè",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-pinot-nero-rose"
         },
         wine2 : {
-            src: "Collections/Molino di Rovescala/pinot_nero_bianco.png"
+            src: "Collections/Molino di Rovescala/pinot_nero_bianco.png",
+            text: "Pinot Nero Bianco",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-pinot-nero-vinificato-bianco"
         },
         wine3 : {
-            src: "Collections/Molino di Rovescala/bonarda.png"
+            src: "Collections/Molino di Rovescala/bonarda.png",
+            text: "Bonarda fermo dell'Oltrepò Pavese 2022",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-bonarda-fermo-delloltrepo-pavese"
         },
         wine4 : {
-            src: "Collections/Molino di Rovescala/vigna_delle_olive.png"
+            src: "Collections/Molino di Rovescala/vigna_delle_olive.png",
+            text: "Riserva Vigna Delle Olive Di Levante 2021",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-risegna-vigna-delle-olive-di-levante"
         },
         wine5 : {
-            src: "Collections/Molino di Rovescala/vigna_del_felice.png"
+            src: "Collections/Molino di Rovescala/vigna_del_felice.png",
+            text: "Riserva Vigna Del Felice 2021",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-riserva-vigna-del-felice-2021"
         },
         wine6 : {
-            src: "Collections/Molino di Rovescala/vigna_del_madone.png"
+            src: "Collections/Molino di Rovescala/vigna_del_madone.png",
+            text: "Riserva Vigna Del Madone 2020",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-riserva-vigna-del-madone"
         },
         wine7 : {
-            src: "Collections/Molino di Rovescala/vigna_del_provomme.png"
+            src: "Collections/Molino di Rovescala/vigna_del_provomme.png",
+            text: "Molino di Rovescala - Riserva Vigna Del Povrömme 2020",
+            link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-vigna-del-povromme-2020"
         }
     },
 
     systers_run : {
         wine1 : {
-            src: "Collections/Sister's Run/Calvary Hill 2018.png"
+            src: "Collections/Sister's Run/Calvary Hill 2018.png",
+            text: "Sister's Run Cow's Corner 2019",
+            link: "https://www.tucciateliergastronomico.it/products/sisters-run-cows-corner-2019"
         },
         wine2 : {
-            src: "Collections/Sister's Run/Cow's Corner 2019.png"
+            src: "Collections/Sister's Run/Cow's Corner 2019.png",
+            text: "Sister's Run Calvary Hill 2018",
+            link: "https://www.tucciateliergastronomico.it/products/sisters-run-calvary-hill-shiraz-2018"
         }
     },
 
     la_ceriola : {
         wine1 : {
-            src: "Collections/La Ceriola/Spumante Doc Extra Dry Selezione Oro 2018.png"
+            src: "Collections/La Ceriola/Spumante Doc Selezione Oro.png",
+            text: "Colli Euganei Fior d'Arancio Spumante Doc - Selezione Oro 2018",
+            link: "https://www.tucciateliergastronomico.it/products/la-ceriola-colli-euganei-fior-d-arancio-spumante-docg-selezione-oro"
         },
         wine2 : {
-            src: "Collections/La Ceriola/Spumante Docg Selezione Oro.png"
+            src: "Collections/La Ceriola/Spumante Doc Extra Dry Selezione Oro 2018.png",
+            text: "Prosecco Spumante Doc Extra Dry - Selezione Oro",
+            link: "https://www.tucciateliergastronomico.it/products/la-ceriola-prosecco-spumante-doc-extra-dry-selezione-oro"
         }
     },
 
     heirloom_vineyards : {
         wine1 : {
-            src: "Collections/Heirloom Vineyards/Coonawarra 2019.png"
+            src: "Collections/Heirloom Vineyards/Coonawarra 2019.png",
+            text: "Coonawarra 2019",
+            link: "https://www.tucciateliergastronomico.it/products/heirloom-vineyards-coonawarra-2019"
         },
         wine2 : {
-            src: "Collections/Heirloom Vineyards/Adelaide Hills 2020.png"
+            src: "Collections/Heirloom Vineyards/Adelaide Hills 2020.png",
+            text: "Adelaide Hills 2020",
+            link: "https://www.tucciateliergastronomico.it/products/heirloom-adelaide-hills"
         }
     },
 
     dandelion_vineyards : {
         wine1 : {
-            src: "Collections/Dandelion Vineyards/Lionheart of the Barossa 2018.png"
+            src: "Collections/Dandelion Vineyards/Lionheart of the Barossa 2018.png",
+            text: "Lionheart of the Barossa 2018",
+            link: "https://www.tucciateliergastronomico.it/products/dandelion-vineyards-lionheart-of-the-barossa-2018"
         },
         wine2 : {
-            src: "Collections/Dandelion Vineyards/Garden of the Eden Valley 2021.png"
+            src: "Collections/Dandelion Vineyards/Garden of the Eden Valley 2021.png",
+            text: "Enchanted Garden of the Eden Valley 2021",
+            link: "https://www.tucciateliergastronomico.it/products/dandelion-vineyards-enchanted-garden-of-the-eden-valley-2021"
         },
         wine3 : {
-            src: "Collections/Dandelion Vineyards/Managerie of the Barossa 2019.png"
+            src: "Collections/Dandelion Vineyards/Managerie of the Barossa 2019.png",
+            text: "Managerie of the Barossa 2019",
+            link: "https://www.tucciateliergastronomico.it/products/dandelion-vineyards-managerie-of-the-barossa-2019"
         },
         wine4 : {
-            src: "Collections/Dandelion Vineyards/Lion's Tooth of Mclaren Vale 2019.png"
+            src: "Collections/Dandelion Vineyards/Lion's Tooth of Mclaren Vale 2019.png",
+            text: "Lion's Tooth of Mclaren Vale 2019",
+            link: "https://www.tucciateliergastronomico.it/products/dandelion-vineyards-lions-tooth-of-mclaren-vale-shiraz-riesling-2019"
         },
         wine5 : {
-            src: "Collections/Dandelion Vineyards/Fairytale of the Barossa Rosé 2020.png"
+            src: "Collections/Dandelion Vineyards/Fairytale of the Barossa Rosé 2020.png",
+            text: "Fairytale of the Barossa Rosé 2020",
+            link: "https://www.tucciateliergastronomico.it/products/dandelion-vineyards-fairytale-of-the-barossa-rosefairytale-of-the-barossa-grenache-rose-2020"
         }
     },
 
     cien_y_pico : {
         wine1 : {
-            src: "Collections/Cien Y Pico/Doble Pasta 2019.png"
+            src: "Collections/Cien Y Pico/Doble Pasta 2019.png",
+            text: "Doble Pasta 2019",
+            link: "https://www.tucciateliergastronomico.it/products/cien-y-pico-doble-pasta-2019"
         },
         wine2 : {
-            src: "Collections/ien Y Pico/Vina La Ceja 2021.png"
+            src: "Collections/Cien Y Pico/Vina La Ceja 2021.png",
+            text: "Viña La Ceja 2021",
+            link: "https://www.tucciateliergastronomico.it/products/cien-y-pico-vina-la-ceja-2017"
         }
     },
 
     azienda_agricola_folini : {
         wine1 : {
-            src: "Collections/Azienda Agricola Folini/Dos Bel 2017.png"
+            src: "Collections/Azienda Agricola Folini/Dos Bel 2017.png",
+            text: "Dos Bel 2017",
+            link: "https://www.tucciateliergastronomico.it/products/dos-bel-2017"
         },
         wine2 : {
-            src: "Collections/Azienda Agricola Folini/L'Enrico Riserva 2018.png"
+            src: "Collections/Azienda Agricola Folini/L'Enrico Riserva 2018.png",
+            text: "L'Enrico Riserva 2018",
+            link: "https://www.tucciateliergastronomico.it/products/azienda-agricola-folini-lenrico-riserva-2018"
         }
     }
 
@@ -206,7 +250,6 @@ function InitializeMiniShop(cardsender){
     shop_container.parentElement.children[2].className = "collection-card-image-hover";
     const newimagecarddiv = document.createElement('img');
     newimagecarddiv.className = "collection-card-image";
-    newimagecarddiv.style.padding = "0px";
     newimagecarddiv.style.height = "100%";
     newimagecarddiv.style.width = "30%";
     newimagecarddiv.style.borderTopRightRadius = "0px";
@@ -221,11 +264,10 @@ function InitializeMiniShop(cardsender){
     shop_container.appendChild(newimagecollectioncarddiv);
 
     newimagecollectioncarddiv.style.gridTemplateColumns = grid_template_text;
-    newimagecollectioncarddiv.style.gridTemplateRows = grid_template_text;
+    newimagecollectioncarddiv.style.gridTemplateRows = "100%";
     newimagecollectioncarddiv.style.padding = "0px";
     newimagecollectioncarddiv.style.gap = "2%";
     
-
     //BACKGROUND GRAY DIV
     const newdiv = document.createElement('div');
     newdiv.style.background = "rgba(50, 50, 50, .3)";
@@ -239,11 +281,26 @@ function InitializeMiniShop(cardsender){
     
     //SET THE WINES IMAGES FOR THE CURRENT CARD
     for (let wine = 1; wine < winecount + 1; wine++){
+        const div = document.createElement('div');
+        div.className = "mini-shop-element-div";
+        div.onmousedown = function(){window.open(current_wines_collection["wine" + wine].link)}
+
         const image = document.createElement('img');
-        image.className = 'image-into-minishop';
-        //console.log(current_wines_collection[cardsender_number-1]);
+        image.className = "image-into-minishop";
         image.src = current_wines_collection["wine" + wine].src;
         newimagecollectioncarddiv.appendChild(image);
+        
+        const text = document.createElement('h3');
+        text.className = "text-into-minishop";
+        text.textContent = current_wines_collection["wine" + wine].text;
+        newimagecollectioncarddiv.appendChild(text)
+
+        div.appendChild(image);
+        div.appendChild(text);
+        newimagecollectioncarddiv.appendChild(div);
+        if (wine > 2){
+            break;
+        }
     }
     
 }
