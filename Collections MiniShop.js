@@ -1,27 +1,93 @@
 const wines = {
     molino_di_rovescala : {
         wine1 : {
-            src: "pinot_nero_rose.png"
+            src: "Collections/Molino di Rovescala/pinot_nero_rose.png"
         },
         wine2 : {
-            src: "pinot_nero_bianco.png"
+            src: "Collections/Molino di Rovescala/pinot_nero_bianco.png"
         },
         wine3 : {
-            src: "bonarda.png"
+            src: "Collections/Molino di Rovescala/bonarda.png"
         },
         wine4 : {
-            src: "vigna_delle_olive.png"
+            src: "Collections/Molino di Rovescala/vigna_delle_olive.png"
         },
         wine5 : {
-            src: "vigna_del_felice.png"
+            src: "Collections/Molino di Rovescala/vigna_del_felice.png"
         },
         wine6 : {
-            src: "vigna_del_madone.png"
+            src: "Collections/Molino di Rovescala/vigna_del_madone.png"
         },
         wine7 : {
-            src: "vigna_del_provomme.png"
+            src: "Collections/Molino di Rovescala/vigna_del_provomme.png"
+        }
+    },
+
+    systers_run : {
+        wine1 : {
+            src: "Collections/Sister's Run/Calvary Hill 2018.png"
+        },
+        wine2 : {
+            src: "Collections/Sister's Run/Cow's Corner 2019.png"
+        }
+    },
+
+    la_ceriola : {
+        wine1 : {
+            src: "Collections/La Ceriola/Spumante Doc Extra Dry Selezione Oro 2018.png"
+        },
+        wine2 : {
+            src: "Collections/La Ceriola/Spumante Docg Selezione Oro.png"
+        }
+    },
+
+    heirloom_vineyards : {
+        wine1 : {
+            src: "Collections/Heirloom Vineyards/Coonawarra 2019.png"
+        },
+        wine2 : {
+            src: "Collections/Heirloom Vineyards/Adelaide Hills 2020.png"
+        }
+    },
+
+    dandelion_vineyards : {
+        wine1 : {
+            src: "Collections/Dandelion Vineyards/Lionheart of the Barossa 2018.png"
+        },
+        wine2 : {
+            src: "Collections/Dandelion Vineyards/Garden of the Eden Valley 2021.png"
+        },
+        wine3 : {
+            src: "Collections/Dandelion Vineyards/Managerie of the Barossa 2019.png"
+        },
+        wine4 : {
+            src: "Collections/Dandelion Vineyards/Lion's Tooth of Mclaren Vale 2019.png"
+        },
+        wine5 : {
+            src: "Collections/Dandelion Vineyards/Fairytale of the Barossa Rosé 2020.png"
+        }
+    },
+
+    cien_y_pico : {
+        wine1 : {
+            src: "Collections/Cien Y Pico/Doble Pasta 2019.png"
+        },
+        wine2 : {
+            src: "Collections/ien Y Pico/Vina La Ceja 2021.png"
+        }
+    },
+
+    azienda_agricola_folini : {
+        wine1 : {
+            src: "Collections/Azienda Agricola Folini/Dos Bel 2017.png"
+        },
+        wine2 : {
+            src: "Collections/Azienda Agricola Folini/L'Enrico Riserva 2018.png"
         }
     }
+
+
+
 }
 
 const collectionsrow = {
@@ -70,13 +136,16 @@ function InitializeMiniShop(cardsender){
     }
     //SETTING GLOBAL VARIABLE
     lastcard = cardsender;
-    const winecount = Object.keys(wines.molino_di_rovescala).length;
-    const column_row_number = Math.ceil(Math.sqrt(winecount));
     const shop_container = cardsender.children[0];
     const cardsender_number = shop_container.id.toString().at(-1);
+    const current_wines_collection = Object.values(wines)[cardsender_number-1];
+    const winecount = Object.keys(current_wines_collection).length;
+    const column_row_number = Math.ceil(Math.sqrt(winecount));
+    
     if (shop_container.children.length != 0){
         return;
     }
+
     const currentrow = cardsender.parentElement;
     const currentrownumber = currentrow.id.toString().at(-1);
 
@@ -123,10 +192,10 @@ function InitializeMiniShop(cardsender){
         
     }
 
-    //GET LENGHT AND HEIGHT OF WINES GRIDBOX
+    //DEFINE LENGHT AND HEIGHT OF WINES GRIDBOX
     var grid_template_text = "";
-    for (var i = 0; i < column_row_number; i++){
-        grid_template_text += Math.floor(100/column_row_number-3).toString() + "% ";
+    for (var i = 0; i < Math.ceil(Math.sqrt(winecount)); i++){
+        grid_template_text += Math.floor(100/Math.ceil(Math.sqrt(winecount)) - 3).toString() + "% ";
     }
 
     //SHOPCONTAINTER AND CONTENT - STYLE AND CLASS SETTING
@@ -172,7 +241,8 @@ function InitializeMiniShop(cardsender){
     for (let wine = 1; wine < winecount + 1; wine++){
         const image = document.createElement('img');
         image.className = 'image-into-minishop';
-        image.src = "Collections/Molino_di_Rovescala/" + wines.molino_di_rovescala["wine" + wine].src;
+        //console.log(current_wines_collection[cardsender_number-1]);
+        image.src = current_wines_collection["wine" + wine].src;
         newimagecollectioncarddiv.appendChild(image);
     }
     
