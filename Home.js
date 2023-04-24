@@ -64,7 +64,7 @@ const wineries = {
 function PlaceCardCollectionContent(){
     let cardnumber = 1;
     for (const _winery in wineries){
-        document.getElementById("CardCollectionImage" + cardnumber.toString()).parentElement.onclick = function(){window.open(wineries[_winery.toString()].link)};
+        //document.getElementById("CardCollectionImage" + cardnumber.toString()).parentElement.onclick = function(){window.open(wineries[_winery.toString()].link)};
         document.getElementById("CardCollectionText" + cardnumber.toString()).textContent = wineries[_winery.toString()].name;
         document.getElementById("CardCollectionImage" + cardnumber.toString()).src = wineries[_winery.toString()].src;
         cardnumber++;
