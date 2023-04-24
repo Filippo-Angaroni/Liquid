@@ -180,17 +180,15 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 .collection-container div{
-    height:25vw; 
+    height: 30vw; 
     position: relative; 
-    margin-top: 2vw; 
-    margin-bottom: 2vw;
+    margin-top: 3vw; 
+    margin-bottom: 5vw;
 }
-
-
 
 .collection-card{
     height: 100%; 
-    width: 25vw; 
+    width: 30vw; 
     margin-left: 4vw; 
     margin-right: 4vw; 
     border-radius: 1vw;
@@ -207,10 +205,10 @@ h1, h2, h3, h4, h5, h6, a{
     margin: 0px;
 }
 
-.collection-card:hover{
+.collection-card-hover{
     cursor: pointer;
-    width: 27vw;
-    height: 108%;
+    width: 80vw;
+    height: 110%;
     margin-left: 2.8vw;
     margin-right: 2.8vw;
     border-radius: 2vw;
@@ -218,7 +216,7 @@ h1, h2, h3, h4, h5, h6, a{
 
 }
 
-.collection-card:hover .mini-wine-shop-inside-collection{
+.mini-wine-shop-inside-collection-hover{
     display: grid;
     width: 100%;
     height: 100%;
@@ -226,13 +224,10 @@ h1, h2, h3, h4, h5, h6, a{
     justify-content: center;
 }
 
-.collection-card:hover .collection-card-image{
+.collection-card-image-hover{
     display: none;
 }
 
-.collection-card:hover .center-center-div{
-    display: none;
-}
 
 .collection-card-image{
     object-fit: cover; 
@@ -247,253 +242,9 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 .image-into-minishop{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

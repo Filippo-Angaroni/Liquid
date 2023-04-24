@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Home.css" rel="stylesheet" type="text/css"/>
     <link href="Main-div-items-align.css" rel="stylesheet" type="text/css">
-    
     <title>Document</title>
 </head>
 <body style="overflow-x: hidden; margin: 0px;">
@@ -51,12 +50,9 @@
 
 
     <div class="collection-container" >
-        <div class="center-center-div">
-            <div class="collection-card center-bottom-div" onmouseover="InitializeMiniShop(this)">
-                <div id="MiniWineShop" class="mini-wine-shop-inside-collection">
-                    <!-- <img src="Collections/Molino di Rovescala/pinot_nero_rose.png" style="width: 100%; height: 100%; object-fit:scale-down;"> -->
-                    
-
+        <div id="CollectionsRow1" class="center-center-div">
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop1" class="mini-wine-shop-inside-collection">
                 </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText1"></h2>
@@ -65,53 +61,70 @@
                 
             </div>
 
-            <div class="collection-card center-bottom-div" >
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop2" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText2"></h2>
                 </div>
-                <img id="CardCollectionImage2"  class="collection-card-image">
-
+                <img id="CardCollectionImage2"  class="collection-card-image" >
+                
             </div>
             
         </div>
 
-        <div class="center-center-div">
-            <div class="collection-card center-bottom-div" >
+        <div id="CollectionsRow2" class="center-center-div">
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop3" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText3"></h2>
                 </div>
-                <img id="CardCollectionImage3"  class="collection-card-image">
+                <img id="CardCollectionImage3"  class="collection-card-image" >
+                
             </div>
-            <div class="collection-card center-bottom-div" >
+
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop4" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText4"></h2>
                 </div>
-                <img id="CardCollectionImage4"  class="collection-card-image">
-
+                <img id="CardCollectionImage4"  class="collection-card-image" >
+                
             </div>
 
-            <div class="collection-card center-bottom-div" >
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop5" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText5"></h2>
                 </div>
-                <img id="CardCollectionImage5"  class="collection-card-image">
-
+                <img id="CardCollectionImage5"  class="collection-card-image" >
+                
             </div>
             
         </div>
 
-        <div class="center-center-div">
-            <div class="collection-card center-bottom-div" >
+        <div id="CollectionsRow3" class="center-center-div">
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop6" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText6"></h2>
                 </div>
-                <img id="CardCollectionImage6"  class="collection-card-image">
+                <img id="CardCollectionImage6"  class="collection-card-image" >
+                
             </div>
-            <div class="collection-card center-bottom-div" >
+
+            <div class="collection-card center-bottom-div" onmouseenter="InitializeMiniShop(this)" onmouseleave="ReInitializeCollections()">
+                <div id="MiniWineShop7" class="mini-wine-shop-inside-collection">
+                </div> 
                 <div class="center-center-div">
                     <h2 id="CardCollectionText7"></h2>
                 </div>
-                <img id="CardCollectionImage7"  class="collection-card-image">
+                <img id="CardCollectionImage7"  class="collection-card-image" >
+                
             </div>
         </div>
     </div>
@@ -122,5 +135,6 @@
     <script src="Collections MiniShop.js">
 
     </script>
+
 </body>
 </html>
