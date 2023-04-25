@@ -259,7 +259,7 @@ function InitializeMiniShop(cardsender){
     //newimagecarddiv.onmousedown = function(){newimagecollectioncarddiv.firstChild.remove();};
     shop_container.appendChild(newimagecarddiv);
 
-    //SCROLL PRODUCT TO THE LEFT -----------------------------------------------------------------------------------------
+    //SCROLL PRODUCT TO THE LEFT
     if (winecount > 3){
         const scrolltoleftimg = document.createElement('img');
         scrolltoleftimg.style.display = "flex";
