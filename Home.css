@@ -258,6 +258,7 @@ h1, h2, h3, h4, h5, h6, a{
     z-index: 2;
     border-radius: 2vw;
     border: .5vw solid #F9B233;
+    align-items: center;
     
 }
 
@@ -278,7 +279,7 @@ h1, h2, h3, h4, h5, h6, a{
     border-radius: inherit;
 }
 
-.image-into-minishop{
+.wine-image-into-minishop{
     display: flex;
     width: 70%;
     height: 70%;
@@ -292,11 +293,12 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 .mini-wine-shop{
-    width: 70%;
+    width: 64%;
     height: 100%;
     display: grid;
     align-items: end;
     justify-items: center;
+    justify-content: center;
     background-color: white;
     z-index: 2;
     border-bottom-right-radius: inherit;
@@ -322,4 +324,12 @@ h1, h2, h3, h4, h5, h6, a{
 .text-into-minishop{
     font-size: 1.5vw;
     text-align: center;
+}
+
+.new-image-collection-hover{
+    object-fit: cover;
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
 }

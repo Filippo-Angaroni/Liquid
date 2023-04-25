@@ -32,7 +32,7 @@ const wines = {
         },
         wine7 : {
             src: "Collections/Molino di Rovescala/vigna_del_provomme.png",
-            text: "Molino di Rovescala - Riserva Vigna Del Povrömme 2020",
+            text: "Riserva Vigna Del Povrömme 2020",
             link: "https://www.tucciateliergastronomico.it/products/molino-di-rovescala-vigna-del-povromme-2020"
         }
     },
@@ -158,6 +158,7 @@ function GetElementById(id){
 
 var lastcard;
 let afterclick = false;
+let wineslidenumber = 1;
 
 /**
  * 
@@ -248,28 +249,78 @@ function InitializeMiniShop(cardsender){
     shop_container.parentElement.className = "collection-card-hover";
     shop_container.parentElement.children[1].className = "collection-card-image-hover";
     shop_container.parentElement.children[2].className = "collection-card-image-hover";
+    
+    //IMAGES AT THE LEFT OF THE COLLECTION
     const newimagecarddiv = document.createElement('img');
-    newimagecarddiv.className = "collection-card-image";
-    newimagecarddiv.style.height = "100%";
-    newimagecarddiv.style.width = "30%";
-    newimagecarddiv.style.borderTopRightRadius = "0px";
-    newimagecarddiv.style.borderBottomRightRadius = "0px";
-    newimagecarddiv.style.borderTopLeftRadius = "1.5vw";
-    newimagecarddiv.style.borderBottomLeftRadius = "1.5vw";
+    newimagecarddiv.className = "new-image-collection-hover";
     newimagecarddiv.src = shop_container.parentElement.children[2].src;
     newimagecarddiv.onmouseover = function(){newimagecarddiv.style.cursor = "pointer";}
     newimagecarddiv.onmousedown = function(){window.open(wineries["winery" + cardsender_number].link);};
+    //newimagecarddiv.onmousedown = function(){newimagecollectioncarddiv.firstChild.remove();};
     shop_container.appendChild(newimagecarddiv);
 
+    //SCROLL PRODUCT TO THE LEFT -----------------------------------------------------------------------------------------
+    if (winecount > 3){
+        const scrolltoleftimg = document.createElement('img');
+        scrolltoleftimg.style.display = "flex";
+        scrolltoleftimg.src = "Stuff/angle-left.png";
+        scrolltoleftimg.style.width = "3%";
+        scrolltoleftimg.style.height = "9%";
+        scrolltoleftimg.onclick = function(){
+            wineslidenumber -= 1;
+            newimagecollectioncarddiv.lastChild.remove();
+            if (wineslidenumber <= 0){
+                wineslidenumber = winecount;
+            }
+            console.log(wineslidenumber);
+            newimagecollectioncarddiv.insertBefore(SetWine(wineslidenumber), newimagecollectioncarddiv.firstChild);
+        };
+        shop_container.appendChild(scrolltoleftimg);
+    }
+    
+
+    //WINES COLLECTIONS
     const newimagecollectioncarddiv = document.createElement('div');
     newimagecollectioncarddiv.className = "mini-wine-shop";
-    shop_container.appendChild(newimagecollectioncarddiv);
-
     newimagecollectioncarddiv.style.gridTemplateColumns = grid_template_text;
     newimagecollectioncarddiv.style.gridTemplateRows = "100%";
     newimagecollectioncarddiv.style.padding = "0px";
     newimagecollectioncarddiv.style.gap = "2%";
+    shop_container.appendChild(newimagecollectioncarddiv);
+
+    //SCROLL PRODUCT TO THE RIGHT
+    if (winecount > 3){
+        const scrolltorightimg = document.createElement('img');
+        scrolltorightimg.style.display = "flex";
+        scrolltorightimg.src = "Stuff/angle-right.png";
+        scrolltorightimg.style.width = "3%";
+        scrolltorightimg.style.height = "9%";
+        scrolltorightimg.onclick = function(){
+            let delta = 2;
+            wineslidenumber += 1;
+            if (wineslidenumber > winecount - 2){
+                delta = - winecount + 2;
+            }
+
+            if (wineslidenumber == winecount + 1){
+                wineslidenumber = 1;
+                delta = 2;
+            }
+            
+            newimagecollectioncarddiv.firstChild.remove();
+            newimagecollectioncarddiv.appendChild(SetWine(wineslidenumber+delta));
+            
+            if (wineslidenumber == winecount + 2){
+                wineslidenumber = 1;
+            }
     
+            console.log(wineslidenumber);
+            
+        };
+        shop_container.appendChild(scrolltorightimg);
+    }
+    
+
     //BACKGROUND GRAY DIV
     const newdiv = document.createElement('div');
     newdiv.style.background = "rgba(50, 50, 50, .3)";
@@ -282,13 +333,13 @@ function InitializeMiniShop(cardsender){
     shop_container.parentElement.parentElement.parentElement.insertBefore(newdiv, shop_container.parentElement.parentElement.parentElement.children[0]);
     
     //SET THE WINES IMAGES FOR THE CURRENT CARD
-    for (let wine = 1; wine < winecount + 1; wine++){
+    function SetWine(wine){
         const div = document.createElement('div');
         div.className = "mini-shop-element-div";
         div.onmousedown = function(){window.open(current_wines_collection["wine" + wine].link)}
 
         const image = document.createElement('img');
-        image.className = "image-into-minishop";
+        image.className = "wine-image-into-minishop";
         image.src = current_wines_collection["wine" + wine].src;
         newimagecollectioncarddiv.appendChild(image);
         
@@ -299,12 +350,17 @@ function InitializeMiniShop(cardsender){
 
         div.appendChild(image);
         div.appendChild(text);
-        newimagecollectioncarddiv.appendChild(div);
+        return div;
+
+    }
+
+    for (let wine = 1; wine < winecount + 1; wine++){
+        newimagecollectioncarddiv.appendChild(SetWine(wine));
+        
         if (wine > 2){
             break;
         }
     }
-    
 }
 
 
@@ -351,4 +407,5 @@ function ReInitializeCollections(){
 
     //CLEAR BACKUP
     collectionelementlist = [];
+    wineslidenumber = 1;
 }

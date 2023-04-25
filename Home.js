@@ -164,7 +164,7 @@ function SetSlide(slidenumber){
     HomeImageDescription.textContent = slidecontent["slide" + slidenumber.toString()].description;
     HomeImageButton.textContent = slidecontent["slide" + slidenumber.toString()].buttontext;
     HomeImageButton.href = slidecontent["slide" + slidenumber.toString()].buttonlink;
-    if (slidenumber == 3){
+    if (slidenumber == Object.keys(slidecontent).length){
         HomeImageTitle.style.color = rgb_dark_title;
         HomeImageDescription.style.color = rgb_dark_descritpion;
         HomeImageButton.style.color = rgb_dark_title;
