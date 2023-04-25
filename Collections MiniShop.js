@@ -257,6 +257,8 @@ function InitializeMiniShop(cardsender){
     newimagecarddiv.style.borderTopLeftRadius = "1.5vw";
     newimagecarddiv.style.borderBottomLeftRadius = "1.5vw";
     newimagecarddiv.src = shop_container.parentElement.children[2].src;
+    newimagecarddiv.onmouseover = function(){newimagecarddiv.style.cursor = "pointer";}
+    newimagecarddiv.onmousedown = function(){window.open(wineries["winery" + cardsender_number].link);};
     shop_container.appendChild(newimagecarddiv);
 
     const newimagecollectioncarddiv = document.createElement('div');
