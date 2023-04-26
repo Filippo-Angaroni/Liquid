@@ -156,7 +156,7 @@ function SetSlide(slidenumber){
     let HomeImageDescription = document.getElementById("HomeImageDescription");
     let HomeImageButton = document.getElementById("HomeImageButton");
     const rgb_dark_title = "rgba(0, 0, 0, .9)";
-    const rgb_dark_descritpion = "rgba(0, 0, 0, .8)";
+    const rgb_dark_description = "rgba(0, 0, 0, .8)";
     const rgb_light_title = "rgb(255, 255, 255, .9)";
     const rgb_light_description = "rgba(235, 235, 235, .8)";
 
@@ -165,9 +165,9 @@ function SetSlide(slidenumber){
     HomeImageButton.textContent = slidecontent["slide" + slidenumber.toString()].buttontext;
     HomeImageButton.href = slidecontent["slide" + slidenumber.toString()].buttonlink;
     if (slidenumber == Object.keys(slidecontent).length){
-        HomeImageTitle.style.color = rgb_dark_title;
-        HomeImageDescription.style.color = rgb_dark_descritpion;
-        HomeImageButton.style.color = rgb_dark_title;
+        HomeImageTitle.style.color = rgb_light_title;
+        HomeImageDescription.style.color = rgb_light_description;
+        HomeImageButton.style.color = rgb_light_title;
     } else {
         HomeImageTitle.style.color = rgb_light_title;
         HomeImageDescription.style.color = rgb_light_description; 

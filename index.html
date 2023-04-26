@@ -10,21 +10,7 @@
 </head>
 <body style="overflow-x: hidden; margin: 0px;">
 
-    <!--SLIDE SHOW-->
-    <div class="home-slideshow">
-        <div class="change-slide-button-hover-left">
-            <button class="previous-slide" onclick="LeftSlide()"></button>
-        </div>
-        <div class="change-slide-button-hover-right">
-            <button class="next-slide" onclick="RightSlide()"></button>
-        </div>
-        <div id="ImagesSlideContainer" class="home-slideshow-slide" style="width: 100%; height: 100%;">
-            <img class="image-slide" id="ImageSlide1" src="Stuff/Distribution.png">
-            <img class="image-slide" id="ImageSlide2" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/foresta_e_vigna_rework_copia.jpg?v=1622213063">
-            <img class="image-slide" id="ImageSlide3" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012">
-        </div>
-    </div>
- 
+    <!--HEADER-->
     <div class="header-div">
 
         <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041">
@@ -33,18 +19,41 @@
             <a class="hyperlink-header" href="www.google.com">Education</a>
             <a class="hyperlink-header" href="www.google.com">Consulting</a>
             <a class="hyperlink-header" href="www.google.com">Distribution</a>
-        </div> 
+        </div>
     </div>
+    
+    <!--SLIDE SHOW-->
+    <div class="home-slideshow">
+        <div class="change-slide-button-hover-left">
+            <button class="previous-slide" onclick="LeftSlide()"></button>
+        </div>
 
-    <div class="home-image-content" id="HomeimageContent">
-        <div class="home-image-text-container" id="HomeImageTextContainer">
-            <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
-            <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw; margin-bottom: 2vw;"></h3>
-            <a id="HomeImageButton" class="button-home-text-container"></a>
-        </div> 
+        <div class="home-image-content" id="HomeimageContent">
+            <div class="background-image-content"></div>
+
+            <div class="home-image-text-container" id="HomeImageTextContainer">
+                <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
+                <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw; margin-bottom: 2vw;"></h3>
+                <a id="HomeImageButton" class="button-home-text-container"></a>
+            </div> 
+        </div>
+
+        <div class="change-slide-button-hover-right">
+            <button class="next-slide" onclick="RightSlide()"></button>
+        </div>
+
+        <div id="ImagesSlideContainer" class="home-slideshow-slide" style="width: 100%; height: 100%;">
+            <img class="image-slide" id="ImageSlide1" src="Stuff/Distribution.png">
+            <img class="image-slide" id="ImageSlide2" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/foresta_e_vigna_rework_copia.jpg?v=1622213063">
+            <img class="image-slide" id="ImageSlide3" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012">
+        </div>
     </div>
+ 
+    
 
-    <div class="letterhead-div" style="margin-top: 25vw;" >
+    
+
+    <div class="letterhead-div" >
         <h1 class="letterhead" >Le nostre cantine</h1>
     </div>
 

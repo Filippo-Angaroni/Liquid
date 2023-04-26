@@ -24,14 +24,16 @@ h1, h2, h3, h4, h5, h6, a{
     top:0;
     background-color: transparent;
     z-index: 10;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
 .home-image-content{
     width: 100vw;
-    display: flex;
     z-index: 1;
-    position: relative;
-    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .home-image-text-container{
@@ -41,7 +43,6 @@ h1, h2, h3, h4, h5, h6, a{
     position: relative;
     display: block;
     margin: auto;
-    margin-top: 15vw;
 }
 
 .full-screen-16-9-image{
@@ -83,21 +84,16 @@ h1, h2, h3, h4, h5, h6, a{
 
 .home-slideshow{
     width: 100vw;
-
     height: 56vw;
     background-color: #F9B233;
-    position: absolute;
+    position: relative;
+    align-content: center;
+    justify-items: center;
+    display: flex;  
+    flex-wrap: wrap;
     align-items: center;
-    display: flex;
-    /* animation: homeslideshowanimation;
-    animation-duration: 2s;
-    animation-delay: 3s; */
 }
 
-/* @keyframes homeslideshowanimation{
-    0% {opacity: 100%;}
-    100% {opacity: 0%;}
-} */
 
 .previous-slide, .next-slide{
     position: absolute;
@@ -168,6 +164,7 @@ h1, h2, h3, h4, h5, h6, a{
     position: relative; 
     width: 100vw; 
     display: flex;
+    margin-top: 2vw;
 }
 
 .letterhead{
@@ -332,4 +329,14 @@ h1, h2, h3, h4, h5, h6, a{
     height: 100%;
     border-top-left-radius: 1.5vw;
     border-bottom-left-radius: 1.5vw;
+}
+
+.background-image-content{
+    position: absolute; 
+    height: 120%; 
+    width: 65%; 
+    background: rgba(0, 0, 0, .7); 
+    display: block;
+    filter: blur(3px);
+    border-radius: 2vw;
 }
