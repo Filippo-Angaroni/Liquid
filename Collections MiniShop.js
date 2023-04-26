@@ -255,7 +255,7 @@ function InitializeMiniShop(cardsender){
     newimagecarddiv.className = "new-image-collection-hover";
     newimagecarddiv.src = shop_container.parentElement.children[2].src;
     newimagecarddiv.onmouseover = function(){newimagecarddiv.style.cursor = "pointer";}
-    newimagecarddiv.onmousedown = function(){window.open(wineries["winery" + cardsender_number].link);};
+    newimagecarddiv.onmousedown = function(){window.open(wineries["winery" + cardsender_number].link, "_self");};
     //newimagecarddiv.onmousedown = function(){newimagecollectioncarddiv.firstChild.remove();};
     shop_container.appendChild(newimagecarddiv);
 
@@ -336,7 +336,7 @@ function InitializeMiniShop(cardsender){
     function SetWine(wine){
         const div = document.createElement('div');
         div.className = "mini-shop-element-div";
-        div.onmousedown = function(){window.open(current_wines_collection["wine" + wine].link)}
+        div.onmousedown = function(){window.open(current_wines_collection["wine" + wine].link, "_self")}
 
         const image = document.createElement('img');
         image.className = "wine-image-into-minishop";

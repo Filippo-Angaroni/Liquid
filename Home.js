@@ -163,7 +163,8 @@ function SetSlide(slidenumber){
     HomeImageTitle.textContent = slidecontent["slide" + slidenumber.toString()].title;
     HomeImageDescription.textContent = slidecontent["slide" + slidenumber.toString()].description;
     HomeImageButton.textContent = slidecontent["slide" + slidenumber.toString()].buttontext;
-    HomeImageButton.href = slidecontent["slide" + slidenumber.toString()].buttonlink;
+    HomeImageButton.onclick = function(){window.open(slidecontent["slide" + slidenumber.toString()].buttonlink, "_self");};
+    HomeImageButton.onmouseover = function(){HomeImageButton.style.cursor = "pointer";};
     if (slidenumber == Object.keys(slidecontent).length){
         HomeImageTitle.style.color = rgb_light_title;
         HomeImageDescription.style.color = rgb_light_description;
