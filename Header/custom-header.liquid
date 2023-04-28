@@ -1,0 +1,39 @@
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+
+<head>
+
+</head>
+<body>
+    <div class="header-div">
+
+        <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041" onmousedown="GoToHomePage()">
+
+        <div class="center-center-div">
+            <a class="hyperlink-header" href="/pages/education">Education</a>
+            <a class="hyperlink-header" href="/pages/consulting">Consulting</a>
+            <a class="hyperlink-header" href="/pages/dsitribution">Distribution</a>
+        </div>
+    </div>
+
+    <script>
+        function GoToHomePage(){
+            window.open("https://www.tucciateliergastronomico.it", "_self");
+        }
+    </script>
+  
+</body>
+
+{% schema %}
+  {
+    "name": "Custom header",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom header"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}

@@ -1,3 +1,4 @@
+
 //SLIDECONTENT OBJECT
 const slidecontent = {
     slide1 : {
@@ -64,6 +65,7 @@ const wineries = {
 function PlaceCardCollectionContent(){
     let cardnumber = 1;
     for (const _winery in wineries){
+
         document.getElementById("CardCollectionText" + cardnumber.toString()).textContent = wineries[_winery.toString()].name;
         document.getElementById("CardCollectionImage" + cardnumber.toString()).src = wineries[_winery.toString()].src;
         cardnumber++;
@@ -188,4 +190,13 @@ function ImageRotation(index){
 }
 
 let intervalslideshow = setInterval(function() {ImageRotation(currentindex);  SetSlide(currentindex);}, 5000);
+
+
+//HEADER REDIRECT
+function RedirectToPages(pagename){
+  window.open("https://www.tucciateliergastronomico.it/pages/" + pagename);
+}
+
+
+
 

@@ -1,155 +1,156 @@
 {{ 'custom-home.css' | asset_url | stylesheet_tag }}
+{{ 'custom-div-align.css' | asset_url | stylesheet_tag }}
 
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="Home.css"
-    rel="stylesheet"
-    type="text/css" />
-  <link
-    href="Main-div-items-align.css"
-    rel="stylesheet"
-    type="text/css">
-  <title>Tucci</title>
-</head>
 
 <body style="overflow-x: hidden; margin: 0px;">
-
-  <!--HEADER-->
-  <div class="header-div">
-
-    <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041">
-
-    <div class="center-center-div">
-      <a class="hyperlink-header" href="https://www.tucciateliergastronomico.it/pages/education">Education</a>
-      <a class="hyperlink-header" href="https://www.tucciateliergastronomico.it/pages/consulting">Consulting</a>
-      <a class="hyperlink-header" href="https://www.tucciateliergastronomico.it/pages/dsitribution">Distribution</a>
-    </div>
-  </div>
-
-  <!--SLIDE SHOW-->
-  <div class="home-slideshow">
-    <div class="change-slide-button-hover-left">
-      <button class="previous-slide" onclick="LeftSlide()"></button>
-    </div>
-
-    <div class="home-image-content" id="HomeimageContent">
-      <div class="background-image-content"></div>
-
-      <div class="home-image-text-container" id="HomeImageTextContainer">
-        <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
-        <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw; margin-bottom: 2vw;"></h3>
-        <a id="HomeImageButton" class="button-home-text-container"></a>
-      </div>
-    </div>
-
-    <div class="change-slide-button-hover-right">
-      <button class="next-slide" onclick="RightSlide()"></button>
-    </div>
-
-    <div
-      id="ImagesSlideContainer"
-      class="home-slideshow-slide"
-      style="width: 100%; height: 100%;">
-      <img
-        class="image-slide"
-        id="ImageSlide1"
-        src="Stuff/Distribution.png">
-      <img
-        class="image-slide"
-        id="ImageSlide2"
-        src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/foresta_e_vigna_rework_copia.jpg?v=1622213063">
-      <img
-        class="image-slide"
-        id="ImageSlide3"
-        src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012">
-    </div>
-  </div>
-
-
-
-  <div class="letterhead-div">
-    <h1 class="letterhead">Le nostre cantine</h1>
-  </div>
-
-
-  <div class="collection-container">
-    <div id="CollectionsRow1" class="center-center-div">
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop1" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText1" class="collection-card-text"></h2>
+    
+    <!--SLIDE SHOW-->
+    <div class="home-slideshow">
+        <div class="change-slide-button-hover-left">
+            <button class="previous-slide" onclick="LeftSlide()"></button>
         </div>
-        <img id="CardCollectionImage1" class="collection-card-image">
 
-      </div>
+        <div class="home-image-content" id="HomeimageContent">
+            <div class="background-image-content" style="display: block"></div>
 
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop2" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText2" class="collection-card-text"></h2>
+            <div class="home-image-text-container" id="HomeImageTextContainer">
+                <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
+                <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw; margin-bottom: 2vw;"></h3>
+                <a id="HomeImageButton" class="button-home-text-container"></a>
+            </div> 
         </div>
-        <img id="CardCollectionImage2" class="collection-card-image">
 
-      </div>
+        <div class="change-slide-button-hover-right">
+            <button class="next-slide" onclick="RightSlide()"></button>
+        </div>
 
+        <div id="ImagesSlideContainer" class="home-slideshow-slide" style="width: 100%; height: 100%;">
+            <img class="image-slide" id="ImageSlide1" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Distribution.png?v=1682584367">
+            <img class="image-slide" id="ImageSlide2" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/foresta_e_vigna_rework_copia.jpg?v=1622213063">
+            <img class="image-slide" id="ImageSlide3" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012">
+        </div>
+    </div>
+ 
+    
+
+    
+
+    <div class="letterhead-div" >
+        <h1 class="letterhead" >Le nostre cantine</h1>
     </div>
 
-    <div id="CollectionsRow2" class="center-center-div">
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop3" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText3" class="collection-card-text"></h2>
+
+    <div class="collection-container" >
+        <div id="CloseColletionBackgroundDiv" class="close-collection-background-div" onclick="ReInitializeCollections()">
+
         </div>
-        <img id="CardCollectionImage3" class="collection-card-image">
+        <div id="CollectionsRow1" class="center-center-div">
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop1" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText1" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage1"  class="collection-card-image" >
+                
+            </div>
 
-      </div>
-
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop4" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText4" class="collection-card-text"></h2>
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop2" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText2" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage2"  class="collection-card-image" >
+                
+            </div>
+            
         </div>
-        <img id="CardCollectionImage4" class="collection-card-image">
 
-      </div>
+        <div id="CollectionsRow2" class="center-center-div">
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop3" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText3" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage3"  class="collection-card-image" >
+                
+            </div>
 
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop5" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText5" class="collection-card-text"></h2>
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop4" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText4" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage4"  class="collection-card-image" >
+                
+            </div>
+
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop5" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText5" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage5"  class="collection-card-image" >
+                
+            </div>
+            
         </div>
-        <img id="CardCollectionImage5" class="collection-card-image">
 
-      </div>
+        <div id="CollectionsRow3" class="center-center-div">
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop6" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText6" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage6"  class="collection-card-image" >
+                
+            </div>
 
+            <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)" >
+                <div id="MiniWineShop7" class="mini-wine-shop-inside-collection">
+                </div> 
+                <div class="center-center-div">
+                    <h2 id="CardCollectionText7" class="collection-card-text"></h2>
+                </div>
+                <img id="CardCollectionImage7"  class="collection-card-image" >
+                
+            </div>
+        </div>
     </div>
 
-    <div id="CollectionsRow3" class="center-center-div">
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop6" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText6" class="collection-card-text"></h2>
-        </div>
-        <img id="CardCollectionImage6" class="collection-card-image">
+    <script src="{{ 'custom-home.js' | asset_url }}" defer="defer">
+      
 
-      </div>
+    </script>
 
-      <div class="collection-card center-bottom-div" onclick="InitializeMiniShop(this)">
-        <div id="MiniWineShop7" class="mini-wine-shop-inside-collection"></div>
-        <div class="center-center-div">
-          <h2 id="CardCollectionText7" class="collection-card-text"></h2>
-        </div>
-        <img id="CardCollectionImage7" class="collection-card-image">
+    <script src="{{ 'custom-minishop.js' | asset_url }}" defer="defer"></script>
 
-      </div>
-    </div>
-  </div>
+    <script>
 
-  <script src="Home.js"></script>
-  <script src="Collections MiniShop.js"></script>
-
+      
+    </script>
+  
 </body>
+
+
+{% schema %}
+  {
+    "name": "Custom home",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom home"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+

@@ -1,0 +1,116 @@
+/* @font-face{
+    font-family: "Playfair";
+    src: url({{ "Playfair" | asset_url }}) format("woff");
+  }  */
+  
+h1, h2, h3, h4, h5, h6, a, p, li{
+    font-family: "Playfair";
+}
+
+@media (min-width: 500px){
+    .hyperlink-header{
+        margin: 2vw;
+        font-size: 2vw;
+        font-weight: bold;  
+        color: black;
+        text-decoration: none;  
+    
+    }
+    
+    .header-div{
+        justify-items: stretch;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        justify-content: stretch;
+        display: flex;
+        position:relative;
+        top:0;
+        background-color: transparent;
+        z-index: 10;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    
+    .header-div img{
+        width: 10vw;
+        height: auto;
+        object-fit: contain;
+        cursor:pointer;
+    }
+    
+    .header-div div{
+        width: 100%;
+    }
+    
+    .center-center-div{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #ThreeIconMenu{
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width: 500px){
+    .hyperlink-header{
+        display: none;
+    }
+
+    .header-div img{
+        width: 33vw;
+        margin: auto;
+        position: relative;
+    }
+
+    .header-div{
+        margin: 3vw;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #ThreeIconMenu{
+        width: 8vw;
+        height: 8vw;
+        font-size: 8vw;
+        z-index: 2;
+    }
+
+    #ThreeIconMenu:hover{
+        cursor: pointer;
+    }
+
+    .mini-menu{
+        background-image: linear-gradient(to right, rgba(100, 100, 100, .9), rgba(100, 100, 100, .7), rgba(100, 100, 100, .1));
+        backdrop-filter: blur(3px);
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 75vw;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        align-items: top;
+        padding: 5vw;
+        padding-top: 25vw;
+
+    }
+
+    .mini-menu li{
+        font-size: 8vw;
+        list-style-type: none;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .mini-menu li:hover{
+        cursor: pointer;
+        
+    }
+
+}
