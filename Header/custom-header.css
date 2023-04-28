@@ -1,7 +1,7 @@
 /* @font-face{
     font-family: "Playfair";
     src: url({{ "Playfair" | asset_url }}) format("woff");
-  }  */
+}   */
   
 h1, h2, h3, h4, h5, h6, a, p, li{
     font-family: "Playfair";
@@ -55,10 +55,14 @@ h1, h2, h3, h4, h5, h6, a, p, li{
     .mini-menu{
         display: none;
     }
+
+    .mini-menu li{
+      display: none;
+    }
     
 }
 
-@media (max-width: 500px){
+@media (max-width: 499px){
     .hyperlink-header{
         display: none;
     }
@@ -80,7 +84,7 @@ h1, h2, h3, h4, h5, h6, a, p, li{
         width: 8vw;
         height: 8vw;
         font-size: 8vw;
-        z-index: 2;
+        z-index: 100;
     }
 
     #ThreeIconMenu:hover{
@@ -101,6 +105,7 @@ h1, h2, h3, h4, h5, h6, a, p, li{
         align-items: top;
         padding: 5vw;
         padding-top: 25vw;
+        z-index: 99;
 
     }
 

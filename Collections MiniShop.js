@@ -152,6 +152,8 @@ const collectionidlist = {
 
 let collectionelementlist = [];
 
+var device;
+
 function GetElementById(id){
     return document.getElementById(id);
 }
@@ -179,6 +181,7 @@ function InitializeMiniShop(cardsender){
         afterclick = false;
         return;
     }
+
     //SETTING GLOBAL VARIABLE
     lastcard = cardsender;
     const shop_container = cardsender.children[0];
@@ -356,6 +359,34 @@ function InitializeMiniShop(cardsender){
 }
 
 
+/**
+ * 
+ * @param {HTMLDivElement} cardsender 
+ */
+function InitializePhoneMiniShop(cardsender){
+    console.log(cardsender);
+    if (cardsender.children[1].style.display == "none" || cardsender.children[1].style.display == ""){
+        cardsender.children[1].style.display = "flex";
+        cardsender.style.height = "180vw";
+        cardsender.style.cursor = "default";
+        cardsender.onmousedown = null;
+        cardsender.children[0].onmousedown = function(){
+            InitializePhoneMiniShop(cardsender);
+        };
+        cardsender.children[0].style.cursor = "pointer";
+
+    } else {
+        cardsender.children[1].style.display = "none";
+        cardsender.style.height = "90vw";
+        //cardsender.onmousedown = InitializePhoneMiniShop(cardsender);
+        cardsender.style.cursor = "pointer";
+    }
+
+
+    cardsender.children[1].children[1].src = "https://cdn.shopify.com/s/files/1/0566/5285/7533/files/pinot_nero_rose.png?v=1682584227";
+    
+}
+
 function ReInitializeCollections(){
     /**
      * @param {HTMLDivElement} card
@@ -404,3 +435,15 @@ function ReInitializeCollections(){
     collectionelementlist = [];
     wineslidenumber = 1;
 }
+
+window.addEventListener("resize", function(){
+    if (this.window.matchMedia("(min-width: 500px)").matches && device != "computer"){
+        console.log("computer");
+        device = "computer";
+        PlaceCardCollectionContent();
+    } else if (this.window.matchMedia("(max-width: 499px)").matches && device != "phone"){
+        console.log("phone");
+        device = "phone";
+        PlaceCardCollectionContent();
+    }
+})

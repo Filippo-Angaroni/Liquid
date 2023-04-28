@@ -61,13 +61,28 @@ const wineries = {
 
 }
 
+let device_type = {
+    computer : {
+        min_width: 500
+    },
+    phone : {
+        max_width: 499
+    }
+
+}
+
 //PLACE CARD COLLECTION
 function PlaceCardCollectionContent(){
     let cardnumber = 1;
     for (const _winery in wineries){
-
-        document.getElementById("CardCollectionText" + cardnumber.toString()).textContent = wineries[_winery.toString()].name;
-        document.getElementById("CardCollectionImage" + cardnumber.toString()).src = wineries[_winery.toString()].src;
+        if (device_type.computer.min_width <= parseInt(window.innerWidth)){
+            document.getElementById("CardCollectionText" + cardnumber.toString()).textContent = wineries[_winery.toString()].name;
+            document.getElementById("CardCollectionImage" + cardnumber.toString()).src = wineries[_winery.toString()].src;
+        } else if (device_type.phone.max_width >= parseInt(window.innerWidth)){
+            document.getElementById("PhoneCardCollectionText" + cardnumber.toString()).textContent = wineries[_winery.toString()].name;
+            document.getElementById("PhoneCardCollectionImage" + cardnumber.toString()).src = wineries[_winery.toString()].src;
+        }
+        
         cardnumber++;
     }
 }
