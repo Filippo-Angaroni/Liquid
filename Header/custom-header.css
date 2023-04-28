@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6, a, p, li{
         display: none;
     }
     
+    .mini-menu{
+        display: none;
+    }
     
 }
 
@@ -85,13 +88,13 @@ h1, h2, h3, h4, h5, h6, a, p, li{
     }
 
     .mini-menu{
-        background-image: linear-gradient(to right, rgba(100, 100, 100, .9), rgba(100, 100, 100, .7), rgba(100, 100, 100, .1));
+        background-image: linear-gradient(to right, rgba(200, 200, 200, .9), rgba(200, 200, 200, .7), rgba(200, 200, 200, .1));
         backdrop-filter: blur(3px);
         display: none;
         flex-direction: column;
         position: absolute;
         height: 100%;
-        width: 75vw;
+        width: 100vw;
         z-index: 1;
         top: 0px;
         left: 0px;

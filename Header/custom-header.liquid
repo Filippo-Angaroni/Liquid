@@ -1,10 +1,19 @@
 {{ 'custom-header.css' | asset_url | stylesheet_tag }}
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="custom-header.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <div class="header-div">
+
+        <i id="ThreeIconMenu" class="fa fa-bars" onmousedown="MiniMenu()"></i>
 
         <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/logo_tucci_atelier_x_sito.png?v=1622194041" onmousedown="GoToHomePage()">
 
@@ -15,10 +24,26 @@
         </div>
     </div>
 
+    <div class="mini-menu" id="MiniMenu">
+        <li>Education</li>
+        <li>Consulting</li>
+        <li>Distribution</li>
+    </div>
+
     <script>
         function GoToHomePage(){
             window.open("https://www.tucciateliergastronomico.it", "_self");
         }
+
+        function MiniMenu(){
+            console.log(document.getElementById("MiniMenu").style.display);
+            if (document.getElementById("MiniMenu").style.display == "none" || document.getElementById("MiniMenu").style.display == ""){
+                document.getElementById("MiniMenu").style.display = "flex";
+            } else {
+                document.getElementById("MiniMenu").style.display = "none";
+            }
+        }
+
     </script>
   
 </body>
