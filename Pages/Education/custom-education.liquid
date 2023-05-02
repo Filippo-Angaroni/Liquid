@@ -1,63 +1,61 @@
-{{ 'custom-education.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-education.css' | asset_url | stylesheet_tag }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="custom-header.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <head>
 
-</head>
-<body style="overflow-x: hidden;">
-    
-    <!--TITLE-->
-    <div id="TitleDiv" class="title-div">
-        <h1 style="font-size: 4vw; color: #F9B233;">Education</h1>
-        
-    </div>
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <div class="column-description">
-        <div class="column-description-item">
-            <i class="fa fa-glass"></i>
-            <h3 class="column-description-text">Formazione dedicata e aggiornamento del personale di cucina, ottimizzazione dei tempi di lavoro.</h3>
-        </div>
+  </head>
+  <body style="overflow-x: hidden;">
+      
+      <!--TITLE-->
+      <div id="TitleDiv" class="title-div">
+          <img style="display: block; position: relative; z-index: -1; object-fit: cover; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/EDUCATION_HEADER.jpg?v=1683025249">
+          <h1 style="font-size: 4vw; color: #F9B233; position: absolute;">Education</h1>
+          
+      </div>
 
-        <div class="spacing-div"></div>
-        
-        <div class="column-description-item">
-            <i class="fa fa-glass"></i>
-            <h3 class="column-description-text">Lecturer presso università, ITS e hospitality schools</h3>
-        </div>
+      <!--COLUMN DESCRIPTION--> 
+      <div class="column-description" >
 
-        <div class="spacing-div"></div>
+          <div class="column-description-item">
+              <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/ottimizzazione_dei_tempi_icona.png?v=1683024440" style="height: 5vw;">
+              <h3 class="column-description-text">Formazione dedicata e aggiornamento del personale di cucina, ottimizzazione dei tempi di lavoro.</h3>
+          </div>
 
-        <div class="column-description-item">
-            <i class="fa fa-glass"></i>
-            <h3 class="column-description-text">Formazione specifica per sommellerie</h3>
-        </div>
+          <div class="spacing-div" style="display: flex;"></div>
+          
+          <div class="column-description-item">
+              <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Lecture_icona.png?v=1683024653" style="height: 5vw;">
+              <h3 class="column-description-text">Lecturer presso università, ITS e hospitality schools</h3>
+          </div>
+          <div class="spacing-div" style="display: flex;"></div>
 
-        <div class="spacing-div"></div>
-        
-        <div class="column-description-item">
-            <i class="fa fa-glass"></i>
-            <h3 class="column-description-text">Formazione forza vendita per aziende operanti nel settore import/export distribuzione F&B</h3>
-        </div>
-    </div>
-</body>
+          <div class="column-description-item">
+              <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/sommelier_icona.png?v=1683025246" style="height: 5vw;">
+              <h3 class="column-description-text">Formazione specifica per sommellerie</h3>
+          </div>
 
-{% schema %}
-  {
-    "name": "Custom education",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Custom education"
-      }
-    ]
-  }
-{% endschema %}
+          <div class="spacing-div" style="display: flex;"></div>
+          
+          <div class="column-description-item">
+              <img src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/import_export_icona.png?v=1683025246" style="height: 5vw;">
+              <h3 class="column-description-text">Formazione forza vendita per aziende operanti nel settore import/export distribuzione F&B</h3>
+          </div>
+      </div>
+  </body>
 
-{% stylesheet %}
-{% endstylesheet %}
+  {% schema %}
+    {
+      "name": "Custom education",
+      "settings": [],
+      "presets": [
+        {
+          "name": "Custom education"
+        }
+      ]
+    }
+  {% endschema %}
+
+  {% stylesheet %}
+  {% endstylesheet %}

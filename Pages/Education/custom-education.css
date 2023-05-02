@@ -3,49 +3,52 @@ h3{
 }
 
 .title-div{
-    align-content: center; 
-    justify-content: center; 
+    align-content: center;
+    justify-content: center;
     display: flex;
+    height: 40vw;
+    width: 100vw;
 }
 
 .column-description{
-    display: grid; 
-    grid-template-rows: 1; 
-    grid-template-columns: 15% 1.66% 15% 1.66% 15% 1.66% 15%; 
-    width: 100vw; 
-    justify-items: center; 
-    justify-content: center; 
-    height: 30vw; 
-    justify-content: center; 
-    margin-top: 10vw; 
-    gap: 1vw; 
-    background-color: #F9B233; 
-    padding-top: 7vw; 
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 15% 1.66% 15% 1.66% 15% 1.66% 15%;
+    width: 100vw;
+    justify-items: center;
+    justify-content: center;
+    height: 30vw;
+    justify-content: center;
+    /* margin-top: 10vw;  */
+    gap: 1vw;
+    background-color: #F9B233;
+    padding-top: 7vw;
     padding-bottom: 7vw;
 }
 
 .column-description-item{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    align-content: center; 
-    justify-content: top; 
-    justify-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: top;
+    justify-items: center;
     font-size: 2.5vw;
 }
 
 .column-description-text{
-    font-size: 1.5vw; 
-    text-align: left; 
-    font-family: "aller"; 
-    color: white; 
-    font-weight: 200; 
-    margin-top: 2vw;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "aller";
+    color: white;
+    font-weight: 200;
+    /* margin-top: 2vw; */
 }
 
 .spacing-div{
-    width: 3%; 
-    height: 100%; 
+    display: flex;
+    width: 3%;
+    height: 100%;
     background-color: white;
 }
 
