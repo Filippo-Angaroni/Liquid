@@ -15,9 +15,9 @@
             <div class="background-image-content" style="display: block"></div>
 
             <div class="home-image-text-container" id="HomeImageTextContainer">
-                <h1 id="HomeImageTitle" style="text-align: left; color: rgba(255, 255, 255, .9); font-size: 3vw;"></h1>
-                <h3 id="HomeImageDescription" style="text-align: left; color: rgba(235, 235, 235, .8); font-size: 1.5vw; margin-bottom: 2vw;"></h3>
-                <a id="HomeImageButton" class="button-home-text-container"></a>
+                <h1 id="HomeImageTitle" class="home-image-title"></h1>
+                <h3 id="HomeImageDescription" class="home-image-description"></h3>
+                <a id="HomeImageButton" class="home-image-button"></a>
             </div> 
         </div>
 
@@ -31,17 +31,12 @@
             <img class="image-slide" id="ImageSlide3" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/education_TAG.png?v=1622210012">
         </div>
     </div>
- 
-    
-
-    
 
     <div class="letterhead-div" >
         <h1 class="letterhead" >Le nostre cantine</h1>
     </div>
 
-
-    <div class="collection-container" >
+    <div class="collection-container">
         <div id="CloseColletionBackgroundDiv" class="close-collection-background-div" onclick="ReInitializeCollections()">
 
         </div>
@@ -122,6 +117,116 @@
                 
             </div>
         </div>
+    </div>
+
+    <div class="phone-collection-container" >
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage1"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText1" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage2"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText2" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage3"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText3" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage4"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText4" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage5"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText5" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+        
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage6"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText6" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
+        <div class="phone-collection-card" onmousedown="InitializePhoneMiniShop(this)" >
+            
+            <img id="PhoneCardCollectionImage7"  class="phone-collection-card-image" >
+            <div class="phone-mini-wine-shop">
+                <i class="fa fa-arrow-left" style="position: absolute; font-size: 10vw; left: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+                <img id="PhoneImageIntoMiniShop" class="phone-image-into-minishop">
+                <h2 id="PhoneTextIntoMiniShop" class="phone-text-into-minishop"></h2>
+                <i class="fa fa-arrow-right" style="position: absolute; font-size: 10vw; right: 5vw; cursor: pointer;" onmousedown="ScrollphoneMinishop(this)"></i>
+            </div>
+            <div class="center-center-div">
+                <h2 id="PhoneCardCollectionText7" class="phone-collection-card-text"></h2>
+            </div>
+            
+        </div>
+
     </div>
 
     <script src="{{ 'custom-home.js' | asset_url }}" defer="defer">

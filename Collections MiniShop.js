@@ -358,7 +358,6 @@ function InitializeMiniShop(cardsender){
     }
 }
 
-
 /**
  * 
  * @param {HTMLDivElement} cardsender 
@@ -378,12 +377,11 @@ function InitializePhoneMiniShop(cardsender){
     } else {
         cardsender.children[1].style.display = "none";
         cardsender.style.height = "90vw";
-        //cardsender.onmousedown = InitializePhoneMiniShop(cardsender);
         cardsender.style.cursor = "pointer";
     }
 
 
-    cardsender.children[1].children[1].src = "https://cdn.shopify.com/s/files/1/0566/5285/7533/files/pinot_nero_rose.png?v=1682584227";
+    cardsender.children[1].children[1].src =   Object.values(wines)[parseInt(cardsender.children[0].id.slice(-1))-1]["wine1"].src;
     
 }
 
@@ -435,6 +433,34 @@ function ReInitializeCollections(){
     collectionelementlist = [];
     wineslidenumber = 1;
 }
+
+let phonewinenumber = 1;
+/**
+ * 
+ * @param {HTMLDivElement} sender 
+ */
+function ScrollphoneMinishop(sender){
+    let delta = 0;
+    let setslide = sender.className.split('-').slice(-1);
+    let collectionnumber = parseInt(sender.parentElement.parentElement.children[0].id.slice(-1));
+    if (setslide == "left"){
+        delta = -1;
+    } else { delta = 1; }
+    
+    if ( phonewinenumber + delta == 0 ){
+        phonewinenumber = 7;
+    } else if ( phonewinenumber + delta == 8 ){
+        phonewinenumber = 1;
+    } else {
+        phonewinenumber += delta;
+    }
+
+    sender.parentElement.children[2].textContent = Object.values(wines)[collectionnumber - 1]["wine" + phonewinenumber].text;
+    sender.parentElement.children[1].src = Object.values(wines)[collectionnumber - 1]["wine" + phonewinenumber].src;
+    
+
+}
+
 
 window.addEventListener("resize", function(){
     if (this.window.matchMedia("(min-width: 500px)").matches && device != "computer"){

@@ -1,0 +1,63 @@
+{{ 'custom-education.css' | asset_url | stylesheet_tag }}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="custom-header.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body style="overflow-x: hidden;">
+    
+    <!--TITLE-->
+    <div id="TitleDiv" class="title-div">
+        <h1 style="font-size: 4vw; color: #F9B233;">Education</h1>
+        
+    </div>
+
+    <div class="column-description">
+        <div class="column-description-item">
+            <i class="fa fa-glass"></i>
+            <h3 class="column-description-text">Formazione dedicata e aggiornamento del personale di cucina, ottimizzazione dei tempi di lavoro.</h3>
+        </div>
+
+        <div class="spacing-div"></div>
+        
+        <div class="column-description-item">
+            <i class="fa fa-glass"></i>
+            <h3 class="column-description-text">Lecturer presso università, ITS e hospitality schools</h3>
+        </div>
+
+        <div class="spacing-div"></div>
+
+        <div class="column-description-item">
+            <i class="fa fa-glass"></i>
+            <h3 class="column-description-text">Formazione specifica per sommellerie</h3>
+        </div>
+
+        <div class="spacing-div"></div>
+        
+        <div class="column-description-item">
+            <i class="fa fa-glass"></i>
+            <h3 class="column-description-text">Formazione forza vendita per aziende operanti nel settore import/export distribuzione F&B</h3>
+        </div>
+    </div>
+</body>
+
+{% schema %}
+  {
+    "name": "Custom education",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom education"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
