@@ -4,16 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="custom-distribution.css" rel="stylesheet" type="text/css">
     <title>Distribution</title>
 </head>
-<body style="overflow-x: hidden;">
-    <div style="width: 100vw; height: 30vw; display: grid; grid-template-columns: 40% 40%; grid-template-rows: 100%; background-color: red; align-items: center; align-content: center; justify-content: center; justify-items: center; gap: 5%;">
-        <div style="display: flex; flex-direction: column; background-color: beige; width: 100%; height: 100%; justify-content: center;">
-            <h2>Tucci Atelier Gastronomico è impegnato nella distribuzione import-export di cantine selezionate in Europa con cui collaboriamo.</h2>
-        </div>
-        <div style="background-color: gold; width: 100%; height: 100%;">
-            <img src="">
+<body style="overflow-x: hidden; margin: 0px;">
+
+    <!--TITLE-->
+    <div id="TitleDiv" class="title-div">
+        <img style="display: block; position: relative; z-index: -1; object-fit: cover; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/EDUCATION_HEADER.jpg?v=1683025249">
+        <h1 style="font-size: 4vw; color: #F9B233; position: absolute;">Distribution</h1>
+    </div>
+
+    <!--VISITA IL NOSTRO SHOP-->
+    <div>
+        <div style="width: 100%; height: 100%; background-color: #F9B233; padding: .5vw; cursor: pointer;" onmousedown="GoToShop()">
+            <h1 style="color: white; font-weight: bold; text-align: center;">Visita il nostro shop!</h1>
         </div>
     </div>
+
+    <!--DISTRIBUZIONE INPORT-EXPORT-->
+    <div>
+        <!-- <div style="display: flex; justify-content: center;">
+            <h1 style="color: #F9B233; font-size: 4vw;">Distribuzione</h1>
+        </div> -->
+
+        <div class="two-columns-div" style="width: 100vw; height: 30vw;">
+            <div style="display: flex; width: 100%; height: 100%; justify-content: center;">
+                <h2>Tucci Atelier Gastronomico è impegnato nella distribuzione import-export di cantine selezionate in Europa con cui collaboriamo.</h2>
+            </div>
+            <div style="width: 100%; height: 100%;">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
+    <!--DISTRIBUTORI ESCLUSIVI-->
+    <div>
+        <div class="two-columns-div" style="width: 100vw; height: 60vw; grid-template-columns: 60% 30%; gap: 1%">
+            <div style="display: grid; width: 100%; height: 60vw; grid-template-columns: 40% 40%; grid-template-rows: 40% 40%; gap: 2%; align-items: center; align-content: center; justify-content: center; justify-items: center;">
+                <div class="collection-inside-distributori-esclusivi">
+
+                </div>
+
+                <div class="collection-inside-distributori-esclusivi">
+                    
+                </div>
+
+                <div class="collection-inside-distributori-esclusivi">
+                    
+                </div>
+
+                <div class="collection-inside-distributori-esclusivi">
+                    
+                </div>
+            </div>
+
+            <div>
+                <h2 style="text-align: right;">Siamo distributori esclusivi sul territorio italiano di aziende come Cien Y Pico, Folini, Molino Di Rovescala.</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--SCRIPT-->
+    <script type="application/javascript">
+        function GoToShop(){
+            window.open("https://www.tucciateliergastronomico.it/collections/all", "_self");
+        }
+    </script>
+    
 </body>
 </html>

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ 'custom-consulting.css' | asset_url | stylesheet_tag }}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,26 @@
     <title>Consulting</title>
 </head>
 <body style="overflow-x: hidden; margin: 0px;">
-
+    
     <!--TITLE-->
     <div id="TitleDiv" class="title-div">
         <img class="title-div-image"     src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/CONSULENZA_GASTRONOMICA.png?v=1683034674">
         <h1 style="font-size: 4vw; color: #F9B233; position: absolute;">Consulting</h1>
     </div>
 
-    <!--CONSULENZA GASTRONOMICA-->
-    <div>
-        <div style="display: flex; justify-content: center;">
-            <h1 style="color: #F9B233; font-size: 4vw;">Consulenza Gastronomica</h1>
-        </div>
+    <div style="display: flex; justify-content: center;">
+        <h1 style="color: #F9B233; font-size: 4vw;">Consulenza Gastronomica</h1>
+    </div>
 
-        <div class="consulenza-gastronomica-div">
-            <div style="display: flex; background-color: transparent; width: 100%; height: 100%; align-items: center;">
-                <h3>Le consulenze per la ristorazione fanno parte dei servizi che Tucci Atelier Gastronomico, grazie al percorso formativo ed esperienze lavorative del nostro team di professionisti, propone a ristoranti, hotel, bar, fast food, ed in generale a tutte le aziende che operano nel settore della ristorazione e Food & Beverage.</h3>
-            </div>
-            <div style="background-color: transparent; width: 100%; height: 100%;">
-                <img>
-            </div>
+    <!--CONSULENZA GASTRONOMICA-->
+    <div class="consulenza-gastronomica-div">
+        <div style="display: flex; background-color: transparent; width: 100%; height: 100%; align-items: center;">
+            <h3>Le consulenze per la ristorazione fanno parte dei servizi che Tucci Atelier Gastronomico, grazie al percorso formativo ed esperienze lavorative del nostro team di professionisti, propone a ristoranti, hotel, bar, fast food, ed in generale a tutte le aziende che operano nel settore della ristorazione e Food & Beverage.</h3>
         </div>
-    </div>      
+        <div style="background-color: transparent; width: 100%; height: 100%;">
+            <img>
+        </div>
+    </div>
 
     <!--I NOSTRI CLIENTI-->
     <div>
@@ -117,4 +115,18 @@
         </div>
     </div>
 </body>
-</html>
+
+{% schema %}
+  {
+    "name": "Custom education",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom education"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
