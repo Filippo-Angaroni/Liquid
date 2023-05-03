@@ -1,24 +1,32 @@
-{{ 'custom-consulting.css' | asset_url | stylesheet_tag }}
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ù, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="custom-consulting.css" type="text/css"> -->
+    <title>Consulting</title>
+    <style>
 
+    </style>
 </head>
 <body style="overflow-x: hidden; margin: 0px;">
 
     <!--TITLE-->
-    <div id="TitleDiv" class="title-div">
-        <img class="title-div-image" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/CONSULTING.jpg?v=1683101879">
+    <div id="TitleDiv" style="align-content: center; justify-content: center; display: flex; height: 40vw; width: 100vw;">
+        <img style="display: block; position: relative; z-index: -1; object-fit: cover; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/CONSULTING.jpg?v=1683101879">
+        <h1 style="font-size: 4vw; color: #F9B233; position: absolute;">Consulting</h1>
     </div>
 
     <!--CONSULENZA GASTRONOMICA-->
     <div>
-        <div style="display: flex; justify-content: center; margin-top: 1vw;">
+        <div style="display: flex; justify-content: center;">
             <h1 style="color: #f9b233; font-size: 4vw;">Consulenza Gastronomica</h1>
         </div>
 
-        <div class="consulenza-gastronomica-div">
+        <div style="position: relative; display: grid; grid-template-columns: 45% 45%; gap: 5%; height: 30vw; width: 100vw; justify-items: center; align-items: center; justify-content: center;">
             <div style="display: flex; background-color: transparent; width: 100%; height: 100%; align-items: center;">
-                <h1>Le consulenze per la ristorazione fanno parte dei servizi che Tucci Atelier Gastronomico, grazie al percorso formativo ed esperienze lavorative del nostro team di professionisti, propone a ristoranti, hotel, bar, fast food, ed in generale a tutte le aziende che operano nel settore della ristorazione e Food & Beverage.</h1>
+                <h3>Le consulenze per la ristorazione fanno parte dei servizi che Tucci Atelier Gastronomico, grazie al percorso formativo ed esperienze lavorative del nostro team di professionisti, propone a ristoranti, hotel, bar, fast food, ed in generale a tutte le aziende che operano nel settore della ristorazione e Food & Beverage.</h3>
             </div>
             <div style="width: 100%; height: 30vw; display: flex; align-items: center; justify-items: center; align-content: center; justify-content: center;">
                 <img style="width: 90%; height: 90%; object-fit: cover; display: block; position: relative; border-radius: 3vw;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/CONSULENZA_GASTRONOMICA_1.png?v=1683101970">
@@ -32,93 +40,56 @@
             <h1 style="color: #f9b233; font-size: 4vw;">Consulenza Digital</h1>
         </div>
 
-        <div class="consulenza-digital-div">
-            <div class="consulenza-digital-div-items">
-                <!--COMUNICAZIONE-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Comunicazione_SS.png?v=1683123270">
-                    <h3 style="text-align: center; font-size: 1.3vw;">PIANO DI COMUNICAZIONE</h3>
-                </div>
-
-                <!--STRATEGIA DIGITAL-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Strategia_SS.png?v=1683123269">
-                    <h3 style="text-align: center; font-size: 1.3vw;">STRATEGIA DIGITAL</h3>
-                </div>
-
-                <!--MARKETING-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Marketing_SS.png?v=1683123269">
-                    <h3 style="text-align: center; font-size: 1.3vw;">STRATEGIA MARKETING</h3>
-                </div>
-            </div>
-
-            <div class="consulenza-digital-div-items" style="grid-template-columns: 15% 15% 15% 15%; gap: 5%;">
-                <!--SOCIAL MEDIA-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Gestione_SS.png?v=1683123270">
-                    <h3 style="text-align: center; font-size: 1.3vw;">GESTIONE SOCIAL MEDIA</h3>
-                </div>
-
-                <!--EMAIL E NEWSLETTER-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Mail_SS.png?v=1683123268">
-                    <h3 style="text-align: center; font-size: 1.3vw;">CREAZIONE EMAIL AUTOMATION E NEWSLETTER DEDICATA</h3>
-                </div>
-
-                <!--GRAFICHE MENU ED EVENTI-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Menu_SS.png?v=1683123270">
-                    <h3 style="text-align: center; font-size: 1.3vw;">SVILUPPO GRAFICHE MENU ED EVENTI</h3>
-                </div>
-
-                <!--SHOOTING-->
-                <div style="display: flex; align-items: center; flex-direction: column;">
-                    <img class="consulenza-digital-icons" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Icona_Photographer_SS.png?v=1683125027">
-                    <h3 style="text-align: center; font-size: 1.3vw;">SHOOTING PROFESSIONALI</h3>
-                </div>
-            </div>
-
+        <div>
+            <ol style="list-style: circle;">
+                <li>PIANO DI COMUNICAZIONE</li>
+                <li>STRATEGIA DIGITAL</li>
+                <li>STRATEGIA MARKETING</li>
+                <li>GESTIONE SOCIAL MEDIA</li>
+                <li>CREAZIONE EMAIL AUTOMATION E NEWSLETTER DEDICATA</li>
+                <li>SVILUPPO GRAFICHE MENù ED EVENTI</li>
+                <li>SHOOTING PROFESSIONALI</li>
+            </ol>
         </div>
     </div>
 
     <!--I NOSTRI CLIENTI-->
     <div>
-        <div style="display: flex; justify-content: center; margin-top: 3vw;">
+        <div style="display: flex; justify-content: center;">
             <h1 style="color: #F9B233; font-size: 4vw;">I Nostri Clienti</h1>
         </div>
 
-        <div class="i-nostri-clienti-div">
+        <div style="margin-top: 5vw; position: relative; display: grid; grid-template-columns: 17.5% 17.5% 17.5% 17.5%; grid-template-rows: 40% 40%; gap: 5%; height: 30vw; width: 100vw; justify-items: center; align-items: center; justify-content: center;">
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Cien_y_Pico_logo_3_quadrato.jpg?v=1620208695">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/Cien_y_Pico_logo_3_quadrato.jpg?v=1620208695">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/folini-azienda-agricola-logo_quadrato.jpg?v=1620208711">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/folini-azienda-agricola-logo_quadrato.jpg?v=1620208711">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/molino_rovescala_logo_quadrato.png?v=1620208721">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/molino_rovescala_logo_quadrato.png?v=1620208721">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/4_480x480_5d59d11f-b41e-438c-aeb8-ebcb3fbd009d.png?v=1620634794">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/4_480x480_5d59d11f-b41e-438c-aeb8-ebcb3fbd009d.png?v=1620634794">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/2_480x480_8e19dd97-8a6b-4e83-92d6-9cf8918fcc01.png?v=1620634815">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/2_480x480_8e19dd97-8a6b-4e83-92d6-9cf8918fcc01.png?v=1620634815">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/bbq4all_480x480_bf124ac6-f223-4c27-8e0d-ace2f32f68fc.jpg?v=1620634737">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/bbq4all_480x480_bf124ac6-f223-4c27-8e0d-ace2f32f68fc.jpg?v=1620634737">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/hotel_filario_lucca.jpg?v=1622198280">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/hotel_filario_lucca.jpg?v=1622198280">
             </div>
 
             <div style="width: 100%; height: 100%;">
-                <img class="i-nostri-clienti-div-images" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/ristorante_acquerello.png?v=1622198297">
+                <img style="object-fit: fill; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/ristorante_acquerello.png?v=1622198297">
             </div>
         </div>
     </div>
@@ -126,10 +97,10 @@
     <!--LE NOSTRE COMPETENZE-->
     <div>
         <div style="display: flex; justify-content: center;">
-            <h1 style="color: #F9B233; font-size: 4vw;">Le Nostre Competenze</h1>
+            <h1 style="color: #F9B233; font-size: 4vw;">Le Nostre Competenze:</h1>
         </div>
 
-        <div class="le-nostre-competenze-div">
+        <div style="margin-top: 2vw; position: relative; display: grid; grid-template-columns: 40% 3% 40%; height: 80vw; width: 100vw; justify-items: center; align-items: center; justify-content: center;">
             <div style="width: 100%; height: 100%; display: grid; grid-template-rows: 12% 12% 12% 12% 12% 12% 12% 12%;">
 
                 <!--VISIONE MULTIDISCIPLINARE-->
@@ -161,7 +132,7 @@
                 <div style="display: flex;"></div>
             </div>
 
-            <div style="width: 2%; height: 100%; background-color: black; display: flex;"></div>
+            <div style="width: 2%; height: 100%; background-color: black;"></div>
 
             <div style="width: 100%; height: 100%; display: grid; grid-template-rows: 12% 12% 12% 12% 12% 12% 12% 12%">
 
@@ -196,18 +167,5 @@
         </div>
     </div>
 </body>
+</html>
 
-{% schema %}
-  {
-    "name": "Custom education",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Custom education"
-      }
-    ]
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}

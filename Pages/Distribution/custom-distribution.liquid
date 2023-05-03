@@ -3,16 +3,84 @@
 <head>
 
 </head>
-<body style="overflow-x: hidden;">
-    <div style="width: 100vw; height: 30vw; display: grid; grid-template-columns: 40% 40%; grid-template-rows: 100%; background-color: red; align-items: center; align-content: center; justify-content: center; justify-items: center; gap: 5%;">
-        <div style="display: flex; flex-direction: column; background-color: beige; width: 100%; height: 100%; justify-content: center;">
-            <h2>Tucci Atelier Gastronomico è impegnato nella distribuzione import-export di cantine selezionate in Europa con cui collaboriamo.</h2>
-        </div>
-        <div style="background-color: gold; width: 100%; height: 100%;">
-            <img src="">
+<body style="overflow-x: hidden; margin: 0px;">
+
+    <!--TITLE-->
+    <div id="TitleDiv" class="title-div">
+        <img style="display: block; position: relative; z-index: -1; object-fit: cover; width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/files/EDUCATION_HEADER.jpg?v=1683025249">
+        <h1 style="font-size: 4vw; color: #F9B233; position: absolute;">Distribution</h1>
+    </div>
+
+    <!--VISITA IL NOSTRO SHOP-->
+    <div>
+        <div style="width: 100%; height: 100%; background-color: #F9B233; padding: .5vw; cursor: pointer;" onmousedown="GoToShop()">
+            <h1 style="color: white; font-weight: bold; text-align: center;">Visita il nostro shop!</h1>
         </div>
     </div>
+
+    <!--DISTRIBUZIONE INPORT-EXPORT-->
+    <div>
+        <!-- <div style="display: flex; justify-content: center;">
+            <h1 style="color: #F9B233; font-size: 4vw;">Distribuzione</h1>
+        </div> -->
+
+        <div class="two-columns-div" style="width: 100vw; height: 30vw;">
+            <div style="display: flex; width: 100%; height: 100%; justify-content: center;">
+                <h2>Tucci Atelier Gastronomico è impegnato nella distribuzione import-export di cantine selezionate in Europa con cui collaboriamo.</h2>
+            </div>
+            <div style="width: 100%; height: 100%;">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
+    <!--DISTRIBUTORI ESCLUSIVI-->
+    <div>
+        <div class="two-columns-div" style="width: 100vw; height: 60vw; grid-template-columns: 60% 30%; gap: 1%">
+            <div class="collection-inside-distributori-esclusivi-container">
+                <div class="collection-inside-distributori-esclusivi">
+                    <img class="collection-card-image" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/collections/PEOPLE_-_CIEN_Y_PICO_1.png?v=1679319361">
+                    <div class="collection-card-text-container">
+                        <h2>Cien Y Pico</h2>
+                    </div>
+                </div>
+
+                <div class="collection-inside-distributori-esclusivi">
+                    <img class="collection-card-image" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/collections/PEOPLE_-_FOLINI_1.png?v=1679046423">
+                    <div class="collection-card-text-container">
+                        <h2>Folini</h2>
+                    </div>
+                </div>
+
+                <div class="collection-inside-distributori-esclusivi">
+                    <img class="collection-card-image" src="https://cdn.shopify.com/s/files/1/0566/5285/7533/collections/PEOPLE_-_MOLINO_DI_ROVESCALA_2.jpg?v=1679321091">
+                    <div class="collection-card-text-container">
+                        <h2>Molino di Rovescala</h2>
+                    </div>
+                </div>
+
+                <div style="display: flex; width: 100%; height: 100%; border-radius: 2vw; background-color: #F9B233; align-items: center; cursor: pointer;">
+                    <h2 style="margin: 1.5vw;">Scopri le nostre collezioni</h2>
+                </div>
+            </div>
+
+            <div>
+                <h2 style="text-align: right;">Siamo distributori esclusivi sul territorio italiano di aziende come Cien Y Pico, Folini, Molino Di Rovescala.</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--SCRIPT-->
+    <script type="application/javascript">
+        function GoToShop(){
+            window.open("https://www.tucciateliergastronomico.it/collections/all", "_self");
+        }
+    </script>
+    
 </body>
+
 
 {% schema %}
   {

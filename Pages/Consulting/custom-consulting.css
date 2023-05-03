@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, a, p{
-    font-family: "Aller";
+    font-family: "Poppins";
 }
 
 .title-div{
@@ -64,13 +64,39 @@ h1, h2, h3, h4, h5, h6, a, p{
 .consulenza-gastronomica-div{
     position: relative;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 40% 50%;
     gap: 5%;
     height: 30vw;
-    width: 100vw;
+    width: 80vw;
     justify-items: center;
     align-items: center;
     justify-content: center;
+    margin: auto;
+}
+
+.consulenza-gastronomica-image{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+    position: relative; 
+    z-index: -1;
+    border-radius: inherit;
+    border-width: .1vw;
+
+}
+
+.consulenza-gastronomica-image-div{
+    width: 90%; 
+    height: 90%;
+    border-radius: 1vw;
+    background: linear-gradient(to left, white, transparent 5%),
+                linear-gradient(to right, white, transparent 5%),
+                linear-gradient(to top, white, transparent 5%),
+                linear-gradient(to bottom, white, transparent 5%);
+    
+    box-shadow: 0px 0px 1vw .5vw white,
+                0px 0px 1vw 2vw #F9B233;            
 }
 
 .i-nostri-clienti-div{  
@@ -88,11 +114,10 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 .le-nostre-competenze-div{
-    margin-top: 2vw;
+    margin-top: 4vw;
     position: relative;
     display: grid;
     grid-template-columns: 40% 3% 40%;
-    grid-template-rows: 33% 33% 33%;
     height: 80vw;
     width: 100vw;
     justify-items: center;
@@ -106,7 +131,71 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 .i-nostri-clienti-div-images{
-    object-fit: fill;
+    object-fit: contain;
     width: 100%;
     height: 100%;
+    border-radius: inherit;
+}
+
+.i-nostri-clienti-div-items{
+    width: 100%;
+    height: 100%;
+    box-shadow: .5vw .5vw 1vw rgb(50, 50, 50);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.le-nostre-competenze-font-style{
+    font-size: 1.4vw;
+    position: relative;
+}
+
+.consulenza-digital-div{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.consulenza-digital-icons{
+    width: 70%; 
+    height: 70%; 
+    object-fit: contain;
+    background-color: transparent;
+    filter: drop-shadow(.5vw .5vw .2vw rgba(242, 169, 0, .3));
+}
+
+.consulenza-digital-div-items{
+    display: grid; 
+    width: 100%; 
+    grid-template-columns: 15% 15% 15%; 
+    gap: 5%; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center; 
+    justify-items: center ;
+}
+
+@keyframes le-nostre-competenze-left-items-anim {
+    from {right: 50vw;}
+    to {right: 0vw;}
+}
+
+.le-nostre-competenze-left-items{
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    position: relative;
+    flex-direction: column; 
+    justify-content: right; 
+    justify-items: right;
+    align-content: end; 
+    align-items: end;
+    right: 0;
+    align-content: center;
+    /* animation-name: le-nostre-competenze-left-items-anim;
+    animation-duration: 1s; */
 }
